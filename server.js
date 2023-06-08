@@ -11,6 +11,7 @@ app.set('view engine', 'ejs');
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true })); //ミドルウェアにより、フォームからの情報にアクセス可能(body部分)
+app.use(express.json()); //JSON情報の解析
 
 const userRouter = require('./routes/users');
 
