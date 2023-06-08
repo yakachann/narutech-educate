@@ -1,5 +1,19 @@
 {
   "dependencies": {
+    "ejs": "^3.1.9",
     "express": "^4.18.2"
+  },
+  "name": "narutech-educate",
+  "description": "テスト",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
