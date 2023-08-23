@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 
 app.set('view engine', 'ejs');
+//loggerはミドルウェア（呼ばれたときに最初に行うもの）
 //app.use(logger);
 
 // app.get("/", (req, res) => {
@@ -17,6 +18,8 @@ const userRouter = require('./routes/users');
 
 app.use('/users', userRouter);
 
+//nextはコールバック関数（関数の中で呼ばれる関数）
+//nextを引数として渡さないとこの関数が次の処理に進むことができない
 // function logger(req, res, next){
 //   console.log(req.originalUrl);
 //   next();
